@@ -3,8 +3,6 @@ import Svg from '../../SVGs/Svg';
 import { SimpleInputPropType } from './SimpleInput.interface';
 import styles from './SimpleInput.module.scss';
 
-//TODO Crear un repo del proyecto, sus reglas y pipelines
-
 const SimpleInput = ({ type = 'text', ...props }: SimpleInputPropType) => {
   const [svgEye, setSvgEye] = useState('EyeOpen');
   const [inputType, setInputType] = useState(type);
