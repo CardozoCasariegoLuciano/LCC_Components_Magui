@@ -23,6 +23,8 @@ jobs:
         run: npm run build
       - name: Linter
         run: npm run pipeline-lint
+      - name: Storybooks
+        run: npm run storybook
       - name: Test
         run: npm run story-test
 
