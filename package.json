@@ -1,0 +1,57 @@
+{
+  "name": "lcc-components-magui",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "type": "module",
+  "files": [
+    "build"
+  ],
+  "version": "1.0.11",
+  "description": "",
+  "scripts": {
+    "lint": "eslint .",
+    "pipeline-lint": "eslint --config ./.github/workflows/.eslintrc.action.cjs .",
+    "lint-fix": "eslint . --fix",
+    "build": "rollup -c --bundleConfigAsCjs",
+    "storybook": "storybook dev -p 6006",
+    "story-test": "test-storybook",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@storybook/addon-essentials": "^7.2.1",
+    "@storybook/addon-interactions": "^7.2.1",
+    "@storybook/addon-links": "^7.2.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.2.1",
+    "@storybook/react": "^7.2.1",
+    "@storybook/react-vite": "^7.2.1",
+    "@storybook/test-runner": "^0.13.0",
+    "@storybook/testing-library": "^0.2.0",
+    "@storybook/testing-react": "^2.0.1",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "6.2.0",
+    "eslint": "8.46.0",
+    "eslint-plugin-react": "7.33.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest-environment-jsdom": "^29.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.27.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "sass": "^1.64.2",
+    "storybook": "^7.2.1",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
+  }
+}
