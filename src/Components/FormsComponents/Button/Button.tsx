@@ -10,7 +10,7 @@ const Button = ({ disabled = false, ...props }: ButtonPropType) => {
     <button
       className={styleClases}
       onClick={() => {
-        !disabled && props.onClick();
+        !disabled && props.onClick && props.onClick();
       }}
     >
       {props.children}
