@@ -9,7 +9,6 @@ import CheckBox from '../../../Components/FormsComponents/CheckBox/CheckBox';
 const FormPage = () => {
   const [value, setValue] = useState('');
   const [errors, setErrors] = useState({});
-  const [check, setIsCheck] = useState(false);
 
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.value.includes('E')) {
